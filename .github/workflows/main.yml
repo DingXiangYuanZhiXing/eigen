@@ -12,7 +12,7 @@ jobs:
       - name: git-sync
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://gitlab.com/libeigen/eigen.git"
+          source_repo: "https://libeigen@gitlab.com/libeigen/eigen.git"
           #source_branch: "main"
           destination_repo: " DingXiangYuanZhiXing/eigen"
           #destination_branch: "main"
