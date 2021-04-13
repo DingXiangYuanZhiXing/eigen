@@ -1,0 +1,20 @@
+# This is a basic workflow to help you get started with Actions
+
+name: mirror
+
+# .github/workflows/git-sync.yml
+
+on: push
+jobs:
+  git-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: git-sync
+        uses: wei/git-sync@v3
+        with:
+          source_repo: "https://gitlab.com/libeigen/eigen.git"
+          #source_branch: "main"
+          destination_repo: " DingXiangYuanZhiXing/eigen"
+          #destination_branch: "main"
+          source_branch: "refs/remotes/source/*"
+          destination_branch: "refs/heads/*"
